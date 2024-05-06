@@ -9,19 +9,17 @@ void radix_sort(int *array, size_t size);
  * @array: An array of integers.
  * @size: The size of the array.
  *
- * Return: The maximum integer 
+ * Return: The maximum integer
  */
 int get_max(int *array, int size)
 {
-	int max, i;
-
-	for (max = array[0], i = 1; i < size; i++)
-	{
-		if (array[i] > max)
-			max = array[i];
-	}
-
-	return (max);
+int max, i;
+for (max = array[0], i = 1; i < size; i++)
+{
+if (array[i] > max)
+max = array[i];
+}
+return (max);
 }
 
 /**
@@ -80,3 +78,4 @@ void radix_sort(int *array, size_t size)
 
 	free(buff);
 }
+
