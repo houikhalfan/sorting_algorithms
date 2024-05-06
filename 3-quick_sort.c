@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include "sort.h"
 
+/* Fun*/
+void quick_sort_recursive(int *array, int low, int high, size_t size);
+int partition(int *array, int low, int high, size_t size);
+
 /**
  * quick_sort - Sorts an arra
  * @array: The array
